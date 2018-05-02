@@ -29,11 +29,7 @@ export class RegisterPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegisterPage');
   }
-
-  registerUser() {
-  	console.log('registrar como:', this.user.value, this.password.value);
-  }
-
+  
   registerUser() {
   	this.fire.auth.createUserWithEmailAndPassword(this.user.value, this.password.value)
   	.then(data => { 

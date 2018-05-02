@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
+import { LoggedinPage } from '../pages/loggedin/loggedin';
 import { RegisterPage } from '../pages/register/register';
 
 // angular fire
@@ -35,7 +36,9 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
     ListPage,
     // login && registro
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    // após registro
+    LoggedinPage
 
   ],
   imports: [
@@ -53,7 +56,9 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
     ListPage,
     // login && registro
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    // após registro
+    LoggedinPage
   ],
   providers: [
     StatusBar,
